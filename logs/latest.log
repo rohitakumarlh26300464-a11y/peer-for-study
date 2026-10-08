@@ -1,0 +1,708 @@
+[09:20:36] [Datafixer Bootstrap/INFO]: 291 Datafixer optimizations took 448 milliseconds
+[09:20:42] [Render thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[09:20:42] [Render thread/INFO]: Setting user: rohit
+[09:20:42] [Render thread/WARN]: Skipping bad option: 
+[09:20:42] [Render thread/INFO]: Backend library: LWJGL version 3.4.1+2
+[09:20:43] [Download-2/ERROR]: Failed to fetch user properties
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:59)
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:150)
+	at net.minecraft.client.Minecraft.lambda$new$1(Minecraft.java:459)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 401
+	at com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:103)
+	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:56)
+	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:121)
+	... 5 more
+[09:20:44] [Render thread/INFO]: Using optional rendering extensions: GL_ARB_buffer_storage, GL_KHR_debug, GL_ARB_vertex_attrib_binding, GL_ARB_direct_state_access, GL_EXT_texture_filter_anisotropic
+[09:20:45] [Render thread/INFO]: Reloading ResourceManager: vanilla
+[09:20:45] [Worker-Main-10/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[09:20:45] [Worker-Main-7/INFO]: Found unifont_pua-17.0.01.hex, loading
+[09:20:45] [Worker-Main-5/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[09:20:46] [Download-1/INFO]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: null
+[09:20:46] [Download-1/ERROR]: Failed to fetch Realms feature flags
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: null'
+	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:526)
+	at com.mojang.realmsclient.client.RealmsClient.fetchFeatureFlags(RealmsClient.java:186)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:20:48] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Speaker (Realtek(R) Audio)
+[09:20:48] [Render thread/INFO]: Sound engine started
+[09:20:48] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 2048x1024x0 minecraft:textures/atlas/armor_trims.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/beds.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/signs.png-atlas
+[09:20:48] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[09:20:49] [IO-Worker-1/INFO]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: null
+[09:20:49] [IO-Worker-1/ERROR]: Couldn't connect to realms
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: null'
+	at com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:526)
+	at com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:307)
+	at com.mojang.realmsclient.RealmsAvailability.lambda$check$0(RealmsAvailability.java:48)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:21:27] [Render thread/INFO]: Loaded 1515 recipes
+[09:21:27] [Render thread/INFO]: Loaded 1617 advancements
+[09:21:27] [Server thread/INFO]: Starting integrated minecraft server version 26.1.2
+[09:21:27] [Server thread/INFO]: Generating keypair
+[09:21:28] [Server thread/INFO]: Loading 0 persistent chunks...
+[09:21:28] [Server thread/INFO]: Preparing spawn area: 16%
+[09:21:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[rohit]'/minecraft:overworld
+[09:21:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[rohit]'/minecraft:the_nether
+[09:21:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[rohit]'/minecraft:the_end
+[09:21:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09:21:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09:21:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09:21:28] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[09:21:29] [Server thread/INFO]: Loading 49 chunks for player spawn...
+[09:21:29] [Server thread/INFO]: Preparing spawn area: 16%
+[09:21:29] [Server thread/INFO]: Preparing spawn area: 16%
+[09:21:29] [Server thread/INFO]: Time elapsed: 1314 ms
+[09:21:29] [Server thread/INFO]: rohit[local:E:db873d8c] logged in with entity id 113 at (-585.101679724756, 67.0, -605.640685391128)
+[09:21:29] [Server thread/INFO]: rohit joined the game
+[09:21:29] [Server thread/INFO]: Changing view distance to 16, from 10
+[09:21:30] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[09:21:30] [Render thread/INFO]: Loaded 157 advancements
+[09:21:30] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[09:21:30] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[09:21:30] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 8.
+[09:21:30] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[09:21:30] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[09:21:30] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[09:21:30] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[09:21:30] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[09:21:32] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 128 reached during a single frame. New capacity will be 256.
+[09:21:34] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 256 reached during a single frame. New capacity will be 512.
+[09:21:41] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 512 reached during a single frame. New capacity will be 1024.
+[09:22:19] [Render thread/WARN]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
+[09:23:04] [Render thread/INFO]: Loaded 160 advancements
+[09:28:17] [Render thread/INFO]: Stopping!
+[09:28:17] [Server thread/INFO]: rohit lost connection: Disconnected
+[09:28:17] [Server thread/INFO]: rohit left the game
+[09:28:17] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[09:28:17] [Server thread/ERROR]: Could not schedule ConsecutiveExecutor
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at net.minecraft.util.thread.AbstractConsecutiveExecutor.registerForExecution(AbstractConsecutiveExecutor.java:94)
+	at net.minecraft.util.thread.AbstractConsecutiveExecutor.schedule(AbstractConsecutiveExecutor.java:83)
+	at net.minecraft.server.level.ChunkTaskDispatcher.release(ChunkTaskDispatcher.java:50)
+	at net.minecraft.server.level.DistanceManager$PlayerTicketTracker.onLevelChange(DistanceManager.java:285)
+	at net.minecraft.server.level.DistanceManager$PlayerTicketTracker.runAllUpdates(DistanceManager.java:307)
+	at net.minecraft.server.level.DistanceManager.runAllUpdates(DistanceManager.java:76)
+	at net.minecraft.server.level.ServerChunkCache.runDistanceManagerUpdates(ServerChunkCache.java:273)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:622)
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:269)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:922)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:910)
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:127)
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:878)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:780)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [Server thread/INFO]: Stopping server
+[09:28:17] [Server thread/INFO]: Saving players
+[09:28:17] [Server thread/INFO]: Saving worlds
+[09:28:17] [Server thread/ERROR]: Could not schedule ConsecutiveExecutor
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at net.minecraft.util.thread.AbstractConsecutiveExecutor.registerForExecution(AbstractConsecutiveExecutor.java:94)
+	at net.minecraft.util.thread.AbstractConsecutiveExecutor.schedule(AbstractConsecutiveExecutor.java:83)
+	at net.minecraft.server.level.ChunkTaskDispatcher.onLevelChange(ChunkTaskDispatcher.java:39)
+	at net.minecraft.server.level.ChunkMap.onLevelChange(ChunkMap.java:413)
+	at net.minecraft.server.level.ChunkHolder.updateFutures(ChunkHolder.java:336)
+	at net.minecraft.server.level.DistanceManager.runAllUpdates(DistanceManager.java:89)
+	at net.minecraft.server.level.ServerChunkCache.runDistanceManagerUpdates(ServerChunkCache.java:273)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:315)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [Server thread/ERROR]: Could not schedule ConsecutiveExecutor
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at net.minecraft.util.thread.AbstractConsecutiveExecutor.registerForExecution(AbstractConsecutiveExecutor.java:94)
+	at net.minecraft.util.thread.AbstractConsecutiveExecutor.schedule(AbstractConsecutiveExecutor.java:83)
+	at net.minecraft.server.level.ChunkTaskDispatcher.onLevelChange(ChunkTaskDispatcher.java:39)
+	at net.minecraft.server.level.ChunkMap.onLevelChange(ChunkMap.java:414)
+	at net.minecraft.server.level.ChunkHolder.updateFutures(ChunkHolder.java:336)
+	at net.minecraft.server.level.DistanceManager.runAllUpdates(DistanceManager.java:89)
+	at net.minecraft.server.level.ServerChunkCache.runDistanceManagerUpdates(ServerChunkCache.java:273)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:315)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -62,-21
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -61,-20
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -64,-24
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -63,-21
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -59,-19
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -64,-23
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -60,-19
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -63,-22
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -28,-27
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [Server thread/ERROR]: Failed to save chunk -26,-27
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:17] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.17-server.txt
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -27,-32
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -29,-33
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -28,-31
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -28,-33
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -60,-20
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -27,-33
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -27,-28
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -27,-29
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -25,-28
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -30,-30
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -29,-31
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -28,-28
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -26,-30
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -27,-31
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -38,-28
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [Server thread/ERROR]: Failed to save chunk -28,-32
+java.util.concurrent.RejectedExecutionException
+	at java.base/java.util.concurrent.ForkJoinPool.submissionQueue(ForkJoinPool.java:2611)
+	at java.base/java.util.concurrent.ForkJoinPool.poolSubmit(ForkJoinPool.java:2623)
+	at java.base/java.util.concurrent.ForkJoinPool.execute(ForkJoinPool.java:3179)
+	at net.minecraft.TracingExecutor.execute(TracingExecutor.java:36)
+	at java.base/java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1803)
+	at java.base/java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2026)
+	at net.minecraft.server.level.ChunkMap.save(ChunkMap.java:800)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleUnload$0(ChunkMap.java:557)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:808)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:503)
+	at net.minecraft.server.level.ChunkMap.processUnloads(ChunkMap.java:506)
+	at net.minecraft.server.level.ChunkMap.tick(ChunkMap.java:469)
+	at net.minecraft.server.level.ServerChunkCache.tick(ServerChunkCache.java:322)
+	at net.minecraft.server.MinecraftServer.stopServer(MinecraftServer.java:692)
+	at net.minecraft.client.server.IntegratedServer.stopServer(IntegratedServer.java:246)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:815)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt
+[09:28:18] [IO-Worker-12/INFO]: Saved details to C:\Users\rohit\AppData\Roaming\.minecraft\debug\chunk-rohit-2026-09-22_09.28.18-server.txt

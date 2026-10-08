@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+
+    /* Background image */
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Logo */
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #00d9ff;
+}
+
+/* Navigation links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links li a {
+    position: relative;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+/* Hover */
+
+.nav-links li a:hover {
+    color: #00d9ff;
+}
+
+/* Active link */
+
+.nav-links li a.active {
+    color: #00d9ff;
+}
+
+/* Underline animation */
+
+.nav-links li a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: #00d9ff;
+
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+    width: 100%;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-img-container {
+    width: 190px;
+    height: 190px;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    padding: 5px;
+
+    background: #00d9ff;
+
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+
+    transition: 0.4s ease;
+}
+
+.profile-img-container:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 50px rgba(0, 217, 255, 0.8);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #111;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    color: white;
+}
+
+/* Highlight first letter */
+
+.hero-content h1::first-letter {
+    color: #00d9ff;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+    font-size: 20px;
+
+    color: #cccccc;
+
+    letter-spacing: 1px;
+
+    max-width: 700px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero-content {
+        height: calc(100vh - 140px);
+
+        padding: 20px;
+    }
+
+    .profile-img-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+}
+.photo {
+    display:flex
+    flex-item:inline-block
+
+}

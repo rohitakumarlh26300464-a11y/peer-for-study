@@ -1,0 +1,40 @@
+h1{
+    color:green;
+}
+.hi{
+    text-decoration: line-through;
+}
+.hi:visited{
+    color:aqua;
+}
+.hi:hover{
+    color:green;
+}
+.hi:active{
+    color:yellow;
+}
+body{
+    background-image:url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+th, td {
+  background-color: #96D4D4;
+}
+.hello {
+border: 1px solid #E2E8F0;
+border-radius: 12px;
+padding: 1.2rem;
+box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+background-color: turquoise;
+}
+.hello h1{
+    text-align: center;
+    color:blue;
+}
